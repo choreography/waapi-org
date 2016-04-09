@@ -1,0 +1,208 @@
+html {
+	height: 100%;
+	background: hsl(215, 60%, 50%);
+	color: hsl(0, 0%, 100%);
+}
+
+body {
+	overflow: scroll;
+	min-height: 100%;
+}
+
+
+body {
+	overflow: scroll;
+	min-height: 100%;
+}
+
+
+
+
+h1.logo {
+	font: 600 20px/1.2 Lato, sans-serif;
+}
+
+span.cube {
+	padding: 2.6em 0 0 0.5em;
+	background: hsl(0, 0%, 100%);
+	color: hsl(215, 60%, 50%);
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+p > a {
+	color: hsl(215, 100%, 90%);
+	text-decoration: underline;
+}
+
+
+
+header.page {
+	max-width: 700px;
+	padding: 100px 10px 0;
+	margin: 0 auto;
+
+}
+
+
+article.why {
+	max-width: 700px;
+	padding: 3em 10px 0;
+	margin: 0 auto;
+}
+
+
+
+
+
+article.network {}
+
+article.network p {
+	max-width: 700px;
+	padding: 30px 10px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+nav.mega {
+	padding: 60px 0;
+	background: hsl(215, 100%, 30%);
+	font-size: 0;
+	text-align: center;
+}
+
+nav.mega h1 {
+	padding: .5vh 0 .1vh;
+	font: 500 32px/1.2 Lato, sans-serif;
+	color: hsl(0, 0%, 10%);
+}
+
+nav.mega a {
+	position: relative;
+	display: inline-block;
+	padding: 2vh;
+	height: 15vh;
+	width: 40vw;
+	overflow: hidden;
+	margin: 1.5vh;
+	background: hsl(215, 100%, 50%);
+	/* 	box-shadow: 0 2px 6px -2px hsla(0, 0%, 0%, 0.4), 0 0 10px hsla(0, 0%, 0%, 0.2); */
+	font: 900 48px/1 Lato, sans-serif;
+	vertical-align: top;
+	text-align: center;
+	backface-visibility: hidden;
+}
+
+nav.mega a:hover {
+	outline: 4px solid white;
+/* 	opacity: 0.9; */
+}
+
+nav.mega header {
+	display: block;
+	color: hsl(0, 0%, 100%);
+	font-weight: 900;
+}
+
+nav.mega small {
+	display: block;
+	margin-top: .2em;
+	color: hsl(0, 0%, 100%);
+	font: 400 40%/1.2 Lato, sans-serif;
+}
+
+
+nav.mega a.rocks {}
+nav.mega a.rocks svg { position: absolute; will-change: transform, opacity; }
+nav.mega a.rocks .note1 { right: 40px; bottom: 10px; animation: note1 1s cubic-bezier(0,0,0,1) infinite; }
+nav.mega a.rocks .note2 { right: 40px; bottom: 10px; animation: note2 1s 0.2s cubic-bezier(0,0,0,1) infinite; }
+nav.mega a.rocks .speaker { right: -20px; bottom: -15px; }
+nav.mega a.rocks .speaker path:nth-child(3) { animation: speaker 1s infinite }
+
+@keyframes note1 {
+	from { transform: translate(0px, 0px); }
+	to { transform: translate(-40px, -10px); opacity: 0; }
+}
+@keyframes note2 {
+	from { transform: translate(0px, 0px); }
+	to { transform: translate(-50px, -20px); opacity: 0; }
+}
+
+@keyframes speaker {
+	from { transform: translateX(-1.5px) }
+	25% { transform: translateX(1px) }
+	to { transform: translateX(0px) }
+}
+
+nav.mega a.guide {
+	background-image: url(../assets/patterns/geometry6.png);
+	background-position: 20px 110px;
+}
+nav.mega a.io {
+	background-color: hsl(215, 100%, 50%);
+	background-image: linear-gradient(hsl(215, 100%, 60%) 2px, transparent 2px),
+	                  linear-gradient(90deg, hsl(215, 100%, 60%) 2px, transparent 2px),
+	                  linear-gradient(hsl(215, 100%, 57%) 1px, transparent 1px),
+	                  linear-gradient(90deg, hsl(215, 100%, 57%) 1px, transparent 1px);
+	background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+	background-position: -2px -162px, -62px -2px, -1px -1px, -1px -1px;
+	background-repeat: repeat, repeat, repeat, repeat;
+}
+nav.mega a.news {}
+nav.mega a.space {
+	background-image: url(../assets/patterns/stardust.png);
+}
+
+nav.mega a.tools {
+	background-image: url(../assets/patterns/tools.svg);
+	background-size: 75% auto;
+	background-position: -60px -20px;
+}
+nav.mega a.org {}
+
+
+@media (max-height: 640px), (max-width: 800px) {
+	nav.mega a {
+		width: 45vw;
+		padding: 0 10px;
+		white-space: nowrap;
+		font-size: 6vw;
+		text-align: left;
+	}
+	nav.mega header,
+	nav.mega small {
+		display: inline-block;
+		line-height: 15vh;
+	}
+
+	nav.mega a.rocks {
+		padding-right: 100px;
+	}
+
+	nav.mega a.rocks svg {
+		opacity: 0.2;
+	}
+}
+
+nav.mega.is-animating {
+	transition: height 400ms ease-in;
+	will-change: height;
+	visibility: hidden;
+}
+
+nav.mega.is-animating > * {
+	display: none;
+}
+
+
+
+
