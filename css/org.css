@@ -115,6 +115,20 @@ nav.mega a:hover {
 /* 	opacity: 0.9; */
 }
 
+nav.mega a.placeholder::before {
+	position: absolute;
+	left: -30px;
+	bottom: 1em;
+	padding: 4px 30px;
+	content: 'placeholder';
+	background: hsla(215, 100%, 100%, 0.2);
+	font: 900 12px/1 Lato, sans-serif;
+	transform: rotate(30deg);
+	opacity: 0.3;
+}
+
+
+
 nav.mega header {
 	display: block;
 	color: hsl(0, 0%, 100%);
