@@ -134,7 +134,7 @@ nav.mega a.rocks svg { position: absolute; will-change: transform, opacity; }
 nav.mega a.rocks .note1 { right: 40px; bottom: 10px; animation: note1 1s cubic-bezier(0,0,0,1) infinite; }
 nav.mega a.rocks .note2 { right: 40px; bottom: 10px; animation: note2 1s 0.2s cubic-bezier(0,0,0,1) infinite; }
 nav.mega a.rocks .speaker { right: -20px; bottom: -15px; }
-nav.mega a.rocks .speaker path:nth-child(3) { animation: speaker 1s infinite }
+/* nav.mega a.rocks .speaker path:nth-child(3) { animation: speaker 1s infinite } */
 
 @keyframes note1 {
 	from { transform: translate(0px, 0px); }
